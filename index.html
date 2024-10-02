@@ -10,11 +10,13 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <ul>
+        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <ul id="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#daily-updates">Daily Updates</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -70,10 +72,10 @@
                 <button onclick="window.location.href='optimization-techniques.html'">Read More</button>
             </div>
             
-            <!-- Advanced Software Development -->
+            <!-- Agile Software Development -->
             <div class="work-item">
-                <h3>Advanced Software Development (ASD)</h3>
-                <p>Work on advanced programming techniques, software development life cycle, and project management.</p>
+                <h3>Agile Software Development</h3>
+                <p>I manage software development projects using Agile methodologies like Scrum. My focus is on iterative development, adaptive planning, and delivering high-quality products. Certifications: Certified ScrumMaster (CSM), Agile Practitioner.</p>
                 <button onclick="window.location.href='asd.html'">Read More</button>
             </div>
         </div>
@@ -144,6 +146,29 @@
         </div>
     </section>
     
+    <section id="certifications">
+        <h1>My Certifications</h1>
+        <div class="certifications-container">
+            <div class="certification-item">
+                <h3>AI-900: Microsoft Certified: Azure AI Fundamentals</h3>
+                <p>Issued by Microsoft</p>
+                <p>Date: June 2023</p>
+                <button onclick="toggleImage('cert1')">View</button>
+                <img id="cert1" class="cert-preview" src="demo_cert.jpg" alt="AI-900 Certificate" style="display: none;">
+            </div>
+            
+            <div class="certification-item">
+                <h3>Machine Learning Specialist</h3>
+                <p>Issued by XYZ Platform</p>
+                <p>Date: September 2023</p>
+                <button onclick="toggleImage('cert2')">View</button>
+                <img id="cert2" class="cert-preview" src="path_to_your_image/ml_specialist_cert.jpg" alt="Machine Learning Specialist Certificate" style="display: none;">
+            </div>
+    
+            <!-- Add more certifications here -->
+        </div>
+    </section>
+
     <section id="contact">
         <h1>Contact Me</h1>
         <p>If you would like to reach out, please fill in the form below!</p>
@@ -174,13 +199,31 @@
                 <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
                 <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
                 <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
-                <li><a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a></li>
+                <!-- <li><a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a></li> -->
                 <li><a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a></li>
             </ul>
             <p>&copy; 2024 Sandeep. All Rights Reserved.</p>
         </div>
     </footer>
-    
+    <!-- navbar -->
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('show');
+        }
+    </script>
+<!-- certifications -->
+<script>
+    function toggleImage(certId) {
+        const certImage = document.getElementById(certId);
+        if (certImage.style.display === 'none') {
+            certImage.style.display = 'block'; // Show the image
+        } else {
+            certImage.style.display = 'none'; // Hide the image
+        }
+    }
+</script>
+
     <script src="script.js"></script>
 </body>
 </html>
