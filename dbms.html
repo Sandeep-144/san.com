@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Management Systems</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <ul id="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#daily-updates">Daily Updates</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Database Management Systems</h1>
+    </header>
+
+    <section id="database-system-architecture">
+        <h1>Database System Architecture</h1>
+        <p>This section introduces the foundational architecture of database systems, covering:</p>
+        <ul>
+            <li><strong>Data Abstraction:</strong> Levels of data abstraction including physical, logical, and view levels.</li>
+            <li><strong>Data Independence:</strong> The concept of logical and physical data independence.</li>
+            <li><strong>Data Definition Language (DDL):</strong> Language used to define database schema.</li>
+            <li><strong>Data Manipulation Language (DML):</strong> Language used for querying and updating data.</li>
+        </ul>
+    </section>
+    
+    <section id="data-models">
+        <h1>Data Models</h1>
+        <ul>
+            <li><strong>Entity-Relationship Model:</strong> A graphical approach to database design using entities and relationships.</li>
+            <li><strong>Network Model:</strong> A flexible way of representing objects and their relationships.</li>
+            <li><strong>Relational and Object-Oriented Models:</strong> Representation of data using relations (tables) and objects.</li>
+            <li><strong>Integrity Constraints:</strong> Rules to maintain the correctness of data.</li>
+            <li><strong>Data Manipulation Operations:</strong> Basic operations such as insertion, deletion, and updates.</li>
+        </ul>
+    </section>
+    
+    <section id="relational-query-languages">
+        <h1>Relational Query Languages</h1>
+        <ul>
+            <li><strong>Relational Algebra:</strong> A procedural query language for relational databases.</li>
+            <li><strong>Tuple and Domain Relational Calculus:</strong> Non-procedural query languages for specifying queries.</li>
+            <li><strong>SQL3:</strong> Extended SQL with advanced features for object-relational databases.</li>
+            <li><strong>Open Source and Commercial DBMS:</strong> Examples include MySQL, Oracle, DB2, SQL Server.</li>
+        </ul>
+    </section>
+    
+    <section id="relational-database-design">
+        <h1>Relational Database Design</h1>
+        <ul>
+            <li><strong>Domain and Data Dependency:</strong> Constraints between different domains in a database.</li>
+            <li><strong>Armstrong's Axioms:</strong> A set of rules used to infer all the functional dependencies on a relational database.</li>
+            <li><strong>Normal Forms:</strong> Guidelines for database normalization to reduce redundancy.</li>
+            <li><strong>Dependency Preservation:</strong> Ensuring that functional dependencies are maintained after decomposition.</li>
+            <li><strong>Lossless Design:</strong> Decomposition of database schemas without data loss.</li>
+        </ul>
+    </section>
+    
+    <section id="query-processing-optimization">
+        <h1>Query Processing and Optimization</h1>
+        <ul>
+            <li><strong>Evaluation of Relational Algebra Expressions:</strong> Strategies for executing queries.</li>
+            <li><strong>Query Equivalence:</strong> Equivalence of different relational algebra expressions.</li>
+            <li><strong>Join Strategies:</strong> Techniques for performing joins in relational databases.</li>
+            <li><strong>Query Optimization Algorithms:</strong> Algorithms to optimize the performance of queries.</li>
+        </ul>
+    </section>
+    
+    <section id="storage-strategies">
+        <h1>Storage Strategies</h1>
+        <ul>
+            <li><strong>Indices:</strong> Structures that improve the speed of data retrieval.</li>
+            <li><strong>B-Trees:</strong> Balanced tree data structures for maintaining sorted data and search operations.</li>
+            <li><strong>Hashing:</strong> A technique for direct data access using a hash function.</li>
+        </ul>
+    </section>
+    
+    <section id="transaction-processing">
+        <h1>Transaction Processing</h1>
+        <ul>
+            <li><strong>Concurrency Control:</strong> Methods to ensure the correctness of transactions.</li>
+            <li><strong>ACID Properties:</strong> Atomicity, Consistency, Isolation, Durability properties of a transaction.</li>
+            <li><strong>Serializability of Scheduling:</strong> Ensuring that transactions are executed in a serial order.</li>
+            <li><strong>Locking and Timestamp-Based Schedulers:</strong> Techniques to manage transaction execution.</li>
+            <li><strong>Multi-version and Optimistic Concurrency Control:</strong> Different approaches to manage concurrent transactions.</li>
+            <li><strong>Database Recovery:</strong> Methods to recover databases from failures.</li>
+        </ul>
+    </section>
+    
+    <section id="database-security">
+        <h1>Database Security</h1>
+        <ul>
+            <li><strong>Authentication, Authorization, and Access Control:</strong> Ensuring secure access to the database.</li>
+            <li><strong>DAC, MAC, and RBAC Models:</strong> Discretionary, mandatory, and role-based access control models.</li>
+            <li><strong>Intrusion Detection:</strong> Monitoring systems to detect unauthorized access.</li>
+            <li><strong>SQL Injection:</strong> Preventing malicious SQL code execution.</li>
+        </ul>
+    </section>
+    
+    <section id="sql-concepts">
+        <h1>SQL Concepts</h1>
+        <ul>
+            <li><strong>Basics of SQL:</strong> Data definition and manipulation in SQL.</li>
+            <li><strong>Constraints:</strong> Defining primary key, foreign key, unique, and other constraints.</li>
+            <li><strong>Aggregate and Built-in Functions:</strong> Functions for numeric, date, and string operations.</li>
+            <li><strong>Subqueries and Joins:</strong> Writing complex queries with subqueries and joins.</li>
+            <li><strong>Views:</strong> Creating and managing views in SQL.</li>
+            <li><strong>Transaction Control Commands:</strong> Commands to manage database transactions.</li>
+        </ul>
+    </section>
+    
+    <section id="pl-sql-concepts">
+        <h1>PL/SQL Concepts</h1>
+        <ul>
+            <li><strong>Cursors:</strong> Managing database result sets using cursors.</li>
+            <li><strong>Stored Procedures and Functions:</strong> Precompiled routines for reuse.</li>
+            <li><strong>Database Triggers:</strong> Automated execution of code in response to certain events.</li>
+        </ul>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Sandeep. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & ML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <ul id="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#daily-updates">Daily Updates</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>AI & ML</h1>
+    </header>
+
+    <section id="artificial-intelligence-module-1">
+        <h1>Module 1: Introduction to AI</h1>
+        <p>This module provides a foundational understanding of Artificial Intelligence, including:</p>
+        <ul>
+            <li>Introduction to Artificial Intelligence and its significance in modern technology.</li>
+            <li>Historical backdrop: tracing the evolution of AI from its inception to the present.</li>
+            <li>Overview of AI problems, including classifications and types of challenges addressed by AI.</li>
+            <li>AI techniques: an exploration of various methodologies used in AI development.</li>
+            <li>Production systems: understanding the framework of rules that guide AI problem-solving.</li>
+            <li>Characteristics of problems and production systems: analyzing the features that define AI problems and their respective solutions.</li>
+        </ul>
+    </section>
+    
+    <section id="artificial-intelligence-module-2">
+        <h1>Module 2: Problem Solving</h1>
+        <p>This module delves into problem-solving methodologies in AI, including:</p>
+        <ul>
+            <li>Problem-solving through searching: techniques and strategies to find solutions in AI.</li>
+            <li>State-space search techniques: an overview of various search algorithms, including:</li>
+            <ul>
+                <li>Breadth-first search: exploring all nodes at the present depth before moving on to nodes at the next depth level.</li>
+                <li>Depth-first search: exploring as far as possible along each branch before backtracking.</li>
+                <li>Iterative deepening DFS: combining the space efficiency of depth-first search with the optimality of breadth-first search.</li>
+            </ul>
+            <li>Heuristic search techniques: employing heuristics to improve the efficiency of search algorithms, including:</li>
+            <ul>
+                <li>Hill climbing: a local search algorithm that continuously moves towards the direction of increasing value.</li>
+                <li>Best-first search: exploring paths based on the best available option according to a specified criterion.</li>
+                <li>Problem reduction: breaking down problems into simpler subproblems for easier management.</li>
+                <li>Constraint satisfaction: solving problems by finding values that meet specific constraints.</li>
+            </ul>
+        </ul>
+    </section>
+    
+    <section id="artificial-intelligence-module-3">
+        <h1>Module 3: Finding Optimal Paths</h1>
+        <p>This module focuses on algorithms for finding optimal paths in various problem domains, including:</p>
+        <ul>
+            <li>Brute force: exploring all possible solutions to find the optimal one.</li>
+            <li>Branch and bound: an optimization technique that divides problems into smaller subproblems and eliminates suboptimal solutions.</li>
+            <li>Algorithm A*: a widely-used algorithm for pathfinding and graph traversal that uses heuristics to improve efficiency.</li>
+            <li>Admissibility of A*: understanding the conditions under which the A* algorithm guarantees an optimal solution.</li>
+            <li>Iterative Deepening A*: combining the advantages of A* with iterative deepening techniques for enhanced performance.</li>
+            <li>Recursive best-first search: an efficient method for memory management in search algorithms.</li>
+        </ul>
+    </section>
+    
+    <section id="artificial-intelligence-module-4">
+        <h1>Module 4: Planning</h1>
+        <p>This module discusses planning techniques in AI systems, including:</p>
+        <ul>
+            <li>Components of a planning system: understanding the key elements that contribute to effective planning.</li>
+            <li>Forward state space planning: planning from the initial state towards the goal state.</li>
+            <li>Backward state space planning: planning from the goal state back to the initial state.</li>
+            <li>Goal stack planning: managing goals and subgoals in a stack structure.</li>
+            <li>Plan space planning: exploring different possible plans simultaneously to find the most effective one.</li>
+            <li>Hierarchical planning: organizing plans into a hierarchy to simplify complex tasks.</li>
+        </ul>
+    </section>
+    
+    <section id="artificial-intelligence-module-5">
+        <h1>Module 5: Game Tree Search</h1>
+        <p>This module covers techniques for searching game trees in AI applications, including:</p>
+        <ul>
+            <li>Minimax algorithm: a decision-making algorithm used in two-player games to minimize the possible loss for a worst-case scenario.</li>
+            <li>Alpha-beta pruning: an optimization technique for the minimax algorithm that reduces the number of nodes evaluated.</li>
+            <li>Heuristics in game tree search: the use of heuristics to enhance decision-making in complex games.</li>
+        </ul>
+    </section>
+    
+    <section id="artificial-intelligence-module-6">
+        <h1>Module 6: Natural Language Understanding</h1>
+        <p>This module introduces the key concepts and techniques used in understanding natural language, including:</p>
+        <ul>
+            <li>Overview of natural language understanding (NLU) and its importance in AI.</li>
+            <li>Mechanical translation: methods for translating text from one language to another.</li>
+            <li>Grammars: formal rules governing the structure of sentences in natural languages.</li>
+            <li>Parsing techniques: methods for analyzing the grammatical structure of sentences.</li>
+            <li>Text generation: algorithms and techniques for generating coherent and contextually relevant text.</li>
+            <li>Natural language processing (NLP) systems: an overview of systems designed to facilitate human-computer interaction through natural language.</li>
+        </ul>
+    </section>
+    
+    <section id="ml-introduction">
+        <h1>1. Introduction to Machine Learning</h1>
+        <p>This section provides an overview of machine learning, its applications, and the various techniques employed:</p>
+        <ul>
+            <li>Overview of machine learning and its significance in various domains.</li>
+            <li>Types of machine learning techniques:</li>
+            <ul>
+                <li><strong>Supervised Learning:</strong> Learning from labeled data to make predictions.</li>
+                <li><strong>Unsupervised Learning:</strong> Finding patterns and relationships in unlabeled data.</li>
+                <li><strong>Reinforcement Learning:</strong> Learning through interactions with the environment to maximize rewards.</li>
+            </ul>
+        </ul>
+    </section>
+    
+    <section id="ml-python-basics">
+        <h1>2. Basics of Python for Machine Learning</h1>
+        <p>This section introduces the essential Python programming concepts for machine learning:</p>
+        <ul>
+            <li>Introduction to the Python programming language, including syntax and basic constructs.</li>
+            <li>Python libraries for data manipulation, including:</li>
+            <ul>
+                <li><strong>NumPy:</strong> A library for numerical computations.</li>
+                <li><strong>Pandas:</strong> A library for data manipulation and analysis.</li>
+            </ul>
+            <li>Introduction to <strong>scikit-learn</strong> for implementing machine learning algorithms.</li>
+        </ul>
+    </section>
+    
+    <section id="ml-probability-overview">
+        <h1>3. Overview of Probability</h1>
+        <p>This section covers the statistical tools and concepts essential for machine learning:</p>
+        <ul>
+            <li>Statistical tools utilized in machine learning.</li>
+            <li>Fundamental concepts of probability, including:</li>
+            <ul>
+                <li>Random variables and their types.</li>
+                <li>Discrete and continuous distributions.</li>
+                <li>Multiple random variables and their interactions.</li>
+                <li>Central Limit Theorem and its significance.</li>
+                <li>Sampling distributions and their applications.</li>
+                <li>Hypothesis testing methodologies.</li>
+                <li>Monte Carlo Approximation techniques.</li>
+            </ul>
+        </ul>
+    </section>
+    
+    <section id="ml-supervised-learning">
+        <h1>4. Supervised Learning Techniques and Algorithms</h1>
+        <p>This section focuses on supervised learning techniques and their associated algorithms:</p>
+        <ul>
+            <li><strong>Linear Regression:</strong> Predicting continuous values based on input features.</li>
+            <li><strong>Logistic Regression:</strong> Classifying binary outcomes using probability.</li>
+            <li><strong>Support Vector Machines (SVM):</strong> Classifying data points using hyperplanes.</li>
+            <li><strong>Decision Trees:</strong> Making decisions based on hierarchical structures.</li>
+            <li><strong>Random Forests:</strong> Ensemble method using multiple decision trees for improved accuracy.</li>
+            <li><strong>k-Nearest Neighbors (k-NN):</strong> Classifying data points based on proximity to other points.</li>
+        </ul>
+    </section>
+    
+    <section id="ml-unsupervised-learning">
+        <h1>5. Unsupervised Learning Techniques and Algorithms</h1>
+        <p>This section addresses the challenges and techniques associated with unsupervised learning:</p>
+        <ul>
+            <li>Challenges faced in unsupervised learning, such as identifying meaningful patterns.</li>
+            <li>Importance of preprocessing and scaling data:</li>
+            <ul>
+                <li>Different kinds of preprocessing techniques.</li>
+                <li>Data transformations and scaling methods.</li>
+            </ul>
+            <li><strong>Dimensionality Reduction:</strong> Techniques to reduce the number of features while preserving information, including:</li>
+            <ul>
+                <li><strong>Feature Extraction:</strong> Selecting important features from the data.</li>
+                <li><strong>Principal Component Analysis (PCA):</strong> A method to reduce dimensionality by transforming to a new set of variables.</li>
+                <li><strong>Clustering Techniques:</strong> Grouping similar data points, including:</li>
+                <ul>
+                    <li>k-Means Clustering</li>
+                    <li>Agglomerative Clustering</li>
+                    <li>DBSCAN (Density-Based Spatial Clustering of Applications with Noise)</li>
+                </ul>
+            </ul>
+        </ul>
+    </section>
+    
+    <section id="ml-model-evaluation">
+        <h1>6. Model Evaluation and Improvement</h1>
+        <p>This section discusses methods for evaluating and improving machine learning models:</p>
+        <ul>
+            <li><strong>Cross-Validation:</strong> Techniques to validate the model’s performance on unseen data.</li>
+            <li>Cross-Validation in <strong>scikit-learn</strong> and its benefits.</li>
+            <li><strong>k-Fold Cross-Validation:</strong> A strategy for partitioning data into subsets for training and validation.</li>
+            <li>Understanding overfitting and its implications for model performance.</li>
+            <li>Evaluation Metrics:</li>
+            <ul>
+                <li>Metrics for Binary Classification (e.g., Accuracy, Precision, Recall)</li>
+                <li>Metrics for Multiclass Classification</li>
+            </ul>
+        </ul>
+    </section>
+    
+    <section id="ml-nlp">
+        <h1>7. Natural Language Processing (NLP)</h1>
+        <p>This section provides insights into the basics of NLP and its applications:</p>
+        <ul>
+            <li>Basics of NLP and text preprocessing techniques.</li>
+            <li>Using NLP techniques for:</li>
+            <ul>
+                <li>Sentiment analysis to understand opinions expressed in text.</li>
+                <li>Text classification for categorizing text into predefined classes.</li>
+            </ul>
+            <li>Exploration of generative models in NLP.</li>
+        </ul>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Sandeep. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

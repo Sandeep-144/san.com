@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <ul id="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#daily-updates">Daily Updates</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Image Processing</h1>
+    </header>
+
+    <section id="image-processing-module-1">
+        <h1>Module 1: Digital Image Fundamentals</h1>
+        <p>This module introduces the foundational concepts of digital images, including:</p>
+        <ul>
+            <li>Light and the electromagnetic spectrum.</li>
+            <li>Components of an image processing system.</li>
+            <li>Image formation and digitization concepts.</li>
+            <li>Neighbors of pixel adjacency and connectivity.</li>
+            <li>Regions and boundaries, distance measures.</li>
+            <li>Applications of digital image processing.</li>
+        </ul>
+    </section>
+    
+    <section id="image-processing-module-2">
+        <h1>Module 2: Image Enhancements</h1>
+        <p>This module covers techniques for enhancing images in both the spatial and frequency domains:</p>
+        <ul>
+            <li><strong>In Spatial Domain:</strong>
+                <ul>
+                    <li>Basic gray level transformations.</li>
+                    <li>Histogram processing.</li>
+                    <li>Using arithmetic/logic operations.</li>
+                    <li>Smoothing spatial filters.</li>
+                    <li>Sharpening spatial filters.</li>
+                </ul>
+            </li>
+            <li><strong>In Frequency Domain:</strong>
+                <ul>
+                    <li>Introduction to the Fourier transform and frequency domain concepts.</li>
+                    <li>Smoothing frequency-domain filters.</li>
+                    <li>Sharpening frequency domain filters.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    
+    <section id="image-processing-module-3">
+        <h1>Module 3: Image Restoration</h1>
+        <p>This module discusses various approaches for restoring images:</p>
+        <ul>
+            <li>Various noise models.</li>
+            <li>Image restoration using spatial domain filtering.</li>
+            <li>Image restoration using frequency domain filtering.</li>
+            <li>Estimating the degradation function.</li>
+            <li>Inverse filtering techniques.</li>
+        </ul>
+    </section>
+    
+    <section id="image-processing-module-4">
+        <h1>Module 4: Colour Image Processing</h1>
+        <p>This module focuses on the processing of color images, including:</p>
+        <ul>
+            <li>Color fundamentals and models.</li>
+            <li>Color transformation techniques.</li>
+            <li>Smoothing and sharpening color images.</li>
+            <li>Color segmentation methods.</li>
+        </ul>
+    </section>
+    
+    <section id="image-processing-module-5">
+        <h1>Module 5: Wavelet and Multi-resolution Processing</h1>
+        <p>This module explores techniques for multi-resolution image processing:</p>
+        <ul>
+            <li>Image pyramids.</li>
+            <li>Multi-resolution expansion.</li>
+            <li>Wavelet transform concepts.</li>
+        </ul>
+    </section>
+    
+    <section id="image-processing-module-6">
+        <h1>Module 6: Image Compression</h1>
+        <p>This module introduces concepts related to image compression:</p>
+        <ul>
+            <li>Introduction to image compression models.</li>
+            <li>Error-free compression methods.</li>
+            <li>Lossy compression techniques.</li>
+        </ul>
+    </section>
+    
+    <section id="image-processing-module-7">
+        <h1>Module 7: Image Segmentation</h1>
+        <p>This module covers methods for segmenting images, including:</p>
+        <ul>
+            <li>Detection of discontinuities.</li>
+            <li>Edge linking and boundary detection.</li>
+            <li>Thresholding techniques.</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Sandeep. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

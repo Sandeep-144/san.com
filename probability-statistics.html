@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability And Statistics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <ul id="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#daily-updates">Daily Updates</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Probability And Statistics</h1>
+    </header>
+
+    <!-- Probability and Statistics Sections -->
+    <section id="basic-probability">
+        <h1>Basic Probability</h1>
+        <p>This section introduces the fundamental concepts of probability. The topics include:</p>
+        <ul>
+            <li><strong>Experiment:</strong> A procedure that leads to a single outcome that cannot be predicted with certainty.</li>
+            <li><strong>Probability:</strong> Definition of probability, conditional probability, and independent events.</li>
+            <li><strong>Bayes' Rule:</strong> A method for finding a conditional probability when the reverse conditional probability is known.</li>
+            <li><strong>Random Variables:</strong> Discrete and continuous random variables, their probability mass functions (PMF) and probability density functions (PDF).</li>
+            <li><strong>Cumulative Distribution Function (CDF):</strong> Properties and use of CDFs in probability analysis.</li>
+            <li><strong>Two-dimensional Random Variables:</strong> Their distribution functions, marginal probability functions, and independence.</li>
+        </ul>
+    </section>
+
+    <section id="special-probability-distributions">
+        <h1>Special Probability Distributions</h1>
+        <p>This section explores some of the most commonly used probability distributions:</p>
+        <ul>
+            <li><strong>Binomial Distribution:</strong> Models the number of successes in a fixed number of Bernoulli trials.</li>
+            <li><strong>Poisson Distribution:</strong> Models the number of events occurring within a fixed interval of time or space.</li>
+            <li><strong>Normal Distribution:</strong> The bell-shaped curve that describes many natural phenomena.</li>
+            <li><strong>Exponential and Gamma Distributions:</strong> Models used for time between events and life distributions.</li>
+            <li><strong>Evaluation of Statistical Parameters:</strong> Statistical parameters such as mean, variance, and moments are evaluated for these distributions.</li>
+        </ul>
+    </section>
+
+    <section id="basic-statistics">
+        <h1>Basic Statistics</h1>
+        <p>This section covers essential statistical concepts for data analysis:</p>
+        <ul>
+            <li><strong>Measure of Central Tendency:</strong> Moments, expectation, and dispersion provide insights into data distribution.</li>
+            <li><strong>Skewness and Kurtosis:</strong> Metrics for understanding the shape and symmetry of data distributions.</li>
+            <li><strong>Expected Value of Two-Dimensional Random Variables:</strong> Methods for finding the expected values in joint distributions.</li>
+            <li><strong>Linear Correlation and Correlation Coefficients:</strong> Quantifies the relationship between two variables.</li>
+            <li><strong>Rank Correlation Coefficient:</strong> A measure of the association between the ranks of data.</li>
+            <li><strong>Regression Analysis:</strong> Techniques for modeling the relationship between a dependent variable and one or more independent variables.</li>
+            <li><strong>Chebyshev's Inequality:</strong> A theorem providing bounds on probability based on variance.</li>
+        </ul>
+    </section>
+
+    <section id="applied-statistics">
+        <h1>Applied Statistics</h1>
+        <p>This section focuses on hypothesis testing and statistical inference techniques:</p>
+        <ul>
+            <li><strong>Formation of Hypothesis:</strong> Developing testable statements for statistical analysis.</li>
+            <li><strong>Large Sample Tests:</strong> Testing for single proportions, difference of proportions, single mean, and differences in means and standard deviations using large samples.</li>
+            <li><strong>Small Sample Tests:</strong> <em>t-Test</em> for single mean, difference of means, correlation coefficients; <em>F-test</em> for variance ratios; and <em>Chi-square test</em> for goodness of fit and independence of attributes.</li>
+        </ul>
+    </section>
+
+    <section id="curve-fitting">
+        <h1>Curve Fitting by Numerical Method</h1>
+        <p>This section deals with fitting mathematical curves to data points using numerical methods:</p>
+        <ul>
+            <li><strong>Method of Least Squares:</strong> A statistical technique to determine the line of best fit for a dataset.</li>
+            <li><strong>Fitting Straight Lines:</strong> Fitting a linear model to data using least squares.</li>
+            <li><strong>Fitting Second Degree Parabolas:</strong> Using quadratic models to describe non-linear relationships.</li>
+            <li><strong>Fitting General Curves:</strong> Techniques for fitting more complex models to data.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sandeep. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Fundamentals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <ul id="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#daily-updates">Daily Updates</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Digital Fundamentals</h1>
+    </header>
+
+    <section id="digital-fundamentals-module-1">
+        <h1>Module 1: Fundamentals of Digital Systems and Logic Families</h1>
+        <p>This module introduces the basic concepts of digital systems, including:</p>
+        <ul>
+            <li>Digital signals and circuits (AND, OR, NOT, NAND, NOR, XOR operations).</li>
+            <li>Boolean algebra and IC gates examples.</li>
+            <li>Number systems: binary, signed binary, octal, hexadecimal, binary arithmetic.</li>
+            <li>One’s and two’s complement arithmetic, codes, error detecting, and correcting codes.</li>
+            <li>Characteristics of digital ICs and digital logic families (TTL, Schottky TTL, CMOS).</li>
+            <li>Interfacing CMOS and TTL, Tri-state logic.</li>
+        </ul>
+    </section>
+    
+    <section id="digital-fundamentals-module-2">
+        <h1>Module 2: Combinational Digital Circuits</h1>
+        <p>This module focuses on combinational logic circuits, including:</p>
+        <ul>
+            <li>Logic functions representation and K-map simplification.</li>
+            <li>Minimization of logical functions and Don’t care conditions.</li>
+            <li>Multiplexer, De-Multiplexer/Decoders, Adders, Subtractors, BCD arithmetic.</li>
+            <li>Carry look-ahead adder, serial adder, ALU design, and popular MSI chips.</li>
+            <li>Digital comparator, parity checker/generator, code converters, priority encoders.</li>
+            <li>Display drivers, Q-M method of function realization.</li>
+        </ul>
+    </section>
+    
+    <section id="digital-fundamentals-module-3">
+        <h1>Module 3: Sequential Circuits and Systems</h1>
+        <p>This module covers the design and analysis of sequential circuits, including:</p>
+        <ul>
+            <li>1-bit memory, bistable latches, SR flip flops, JK-T and D flip flops.</li>
+            <li>Applications of flip flops, shift registers, and their applications.</li>
+            <li>Serial to parallel converters, parallel to serial converters, ring counters, and sequence generators.</li>
+            <li>Ripple (asynchronous) counters, synchronous counters, counters design using flip flops.</li>
+            <li>Special counter ICs, asynchronous sequential counters, and counter applications.</li>
+        </ul>
+    </section>
+    
+    <section id="digital-fundamentals-module-4">
+        <h1>Module 4: A/D and D/A Converters</h1>
+        <p>This module explores the conversion between analog and digital signals:</p>
+        <ul>
+            <li>Digital to Analog converters: weighted resistor, R-2R ladder D/A converters.</li>
+            <li>Specifications for D/A converters and examples of D/A converter ICs.</li>
+            <li>Analog to Digital converters: quantization, encoding, parallel comparator, successive approximation, counting A/D converters.</li>
+            <li>Dual slope A/D converters, A/D converters using voltage to frequency/time conversion.</li>
+            <li>Specifications for A/D converters and examples of A/D converter ICs.</li>
+        </ul>
+    </section>
+    
+    <section id="digital-fundamentals-module-5">
+        <h1>Module 5: Semiconductor Memories and Programmable Logic Devices</h1>
+        <p>This module introduces memory systems and programmable logic devices:</p>
+        <ul>
+            <li>Memory organization, operation, and expanding memory size.</li>
+            <li>Memory classifications and characteristics, including ROM, RAM, and CAM.</li>
+            <li>Common memory chips and ROM as a PLD.</li>
+            <li>Programmable Logic Array (PLA), Programmable Array Logic (PAL).</li>
+            <li>Complex Programmable Logic Devices (CPLDs) and Field Programmable Gate Arrays (FPGAs).</li>
+        </ul>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Sandeep. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

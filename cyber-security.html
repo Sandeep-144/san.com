@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <ul id="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#daily-updates">Daily Updates</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Cyber Security</h1>
+    </header>
+
+    <section id="cyber-security-module-1">
+        <h1>Module 1: Systems Vulnerability Scanning</h1>
+        <p>This module covers the essential concepts and tools used in vulnerability scanning, including:</p>
+        <ul>
+            <li>Overview of vulnerability scanning: understanding its significance in identifying weaknesses.</li>
+            <li>Open Port / Service Identification: techniques for detecting open ports and services on a network.</li>
+            <li>Banner / Version Check: methods for identifying service versions through banner grabbing.</li>
+            <li>Traffic Probe: analyzing traffic to uncover potential vulnerabilities.</li>
+            <li>Vulnerability Probe: tools and techniques for probing systems for known vulnerabilities.</li>
+            <li>Examples of vulnerabilities and tools such as OpenVAS and Metasploit for vulnerability assessment.</li>
+            <li>Networks Vulnerability Scanning: using tools like Netcat and Socat to identify vulnerabilities.</li>
+            <li>Understanding Port and Service tools: analyzing tools like Datapipe, Fpipe, and WinRelay.</li>
+            <li>Network Reconnaissance: utilizing Nmap and THC-Amap for comprehensive network scanning.</li>
+            <li>Network Sniffers and Injection tools: practical usage of Tcpdump, Windump, Wireshark, Ettercap, Hping, and Kismet.</li>
+        </ul>
+    </section>
+    
+    <section id="cyber-security-module-2">
+        <h1>Module 2: Network Defense Tools</h1>
+        <p>This module focuses on essential network defense mechanisms, including:</p>
+        <ul>
+            <li>Firewalls and Packet Filters: understanding the basics of firewalls and their role in network security.</li>
+            <li>Differences between Packet Filter and Firewall: analyzing the characteristics and functionality.</li>
+            <li>Packet Characteristics to Filter: identifying which characteristics are essential for filtering.</li>
+            <li>Stateless vs. Stateful Firewalls: understanding the differences and use cases for each type.</li>
+            <li>Network Address Translation (NAT) and Port Forwarding: exploring techniques to enhance security and connectivity.</li>
+            <li>Introduction to Snort: an overview of this popular Intrusion Detection System and its functionalities.</li>
+        </ul>
+    </section>
+    
+    <section id="cyber-security-module-3">
+        <h1>Module 3: Web Application Tools</h1>
+        <p>This module examines tools used for scanning web applications for vulnerabilities, including:</p>
+        <ul>
+            <li>Scanning for web vulnerabilities: understanding the importance of identifying security flaws.</li>
+            <li>Tools like Nikto and W3af for scanning web applications.</li>
+            <li>HTTP utilities: practical use of tools such as Curl, OpenSSL, and Stunnel.</li>
+            <li>Application Inspection tools: leveraging Zed Attack Proxy and Sqlmap for in-depth analysis.</li>
+            <li>Vulnerable Web Applications: hands-on experience with DVWA and Webgoat.</li>
+            <li>Password Cracking and Brute-Force Tools: using John the Ripper, L0htcrack, Pwdump, and HTC-Hydra to test password strength.</li>
+        </ul>
+    </section>
+    
+    <section id="cyber-security-module-4">
+        <h1>Module 4: Introduction to Cyber Crime and Law</h1>
+        <p>This module provides insights into cybercrime, including:</p>
+        <ul>
+            <li>Understanding Cyber Crimes: defining what constitutes a cybercrime and its various forms.</li>
+            <li>Types of Cybercrime: exploring different categories, including hacking and attack vectors.</li>
+            <li>Cyberspace and Criminal Behavior: examining the relationship between technology and criminal activity.</li>
+            <li>Clarification of Terms: defining key terms related to cybercrime.</li>
+            <li>Traditional Problems Associated with Computer Crime: discussing long-standing issues in the realm of cybersecurity.</li>
+            <li>Introduction to Incident Response and Digital Forensics: understanding how to respond to cyber incidents effectively.</li>
+            <li>Realms of the Cyber World: exploring different dimensions and implications of cyberspace.</li>
+            <li>Recognizing and Defining Computer Crime: identifying and classifying various cybercriminal activities.</li>
+            <li>Contemporary Crimes: analyzing modern crimes such as data contamination and destruction.</li>
+            <li>Indian IT ACT 2000: understanding the legal framework governing cyber activities in India.</li>
+        </ul>
+    </section>
+    
+    <section id="cyber-security-module-5">
+        <h1>Module 5: Introduction to Cyber Crime Investigation</h1>
+        <p>This module covers the key concepts and tools used in cyber crime investigations, including:</p>
+        <ul>
+            <li>Understanding Keyloggers and Spyware: how these tools compromise security.</li>
+            <li>Virus and Worms: analyzing malicious software and their impacts.</li>
+            <li>Trojans and Backdoors: recognizing threats posed by hidden entry points.</li>
+            <li>Steganography: techniques for hiding information within other files.</li>
+            <li>DOS and DDoS Attacks: understanding denial-of-service attacks and their prevention.</li>
+            <li>SQL Injection: examining vulnerabilities in web applications and database security.</li>
+            <li>Buffer Overflow: identifying and mitigating risks associated with buffer overflow attacks.</li>
+            <li>Attacks on Wireless Networks: understanding vulnerabilities specific to wireless networks.</li>
+        </ul>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Sandeep. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

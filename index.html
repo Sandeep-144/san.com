@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <ul id="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#daily-updates">Daily Updates</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="home-content">
+            <div class="image-container">
+                <img src="myPic.jpg" alt="Your Profile Picture" class="profile-pic">
+            </div>
+            <div class="introduction">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Hi! I'm Sandeep, a passionate student pursuing a Bachelor's in Engineering with a focus on AI and ML. Here you can find my work, projects, and updates.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h1>My Education</h1>
+        <div class="education-container">
+            <div class="education-item">
+                <h3>Bachelor's in Engineering (BE) in AI-ML</h3>
+                <p>L. D. College Of Engineering ( Ahmedabad )</p>
+                <p>Expected Graduation: 2026</p>
+            </div>
+            
+            <div class="education-item">
+                <h3>Higher Secondary School Certificate (HSC)</h3>
+                <p>Shree Swaminarayan Haigh School ( Gandhinagar )</p>
+                <p>Completed: 2022</p>
+            </div>
+    
+            <div class="education-item">
+                <h3>Secondary School Certificate (SSC)</h3>
+                <p>Shree Swaminarayan Haigh School ( Gandhinagar )</p>
+                <p>Completed: 2020</p>
+            </div>
+    
+            <!-- Add more education details here -->
+        </div>
+    </section>
+    
+
+    <!-- Work Section -->
+    <section id="work">
+        <h1>My Work</h1>
+        <div class="work-container">
+            <!-- Web Development -->
+            <div class="work-item">
+                <h3>Web Development</h3>
+                <p>Here I share my knowledge of HTML, CSS, JavaScript, and frameworks like React, and how I create responsive, dynamic websites.</p>
+                <button onclick="window.location.href='web-development.html'">Read More</button>
+            </div>
+            
+            <!-- AI-ML -->
+            <div class="work-item">
+                <h3>AI-ML</h3>
+                <p>I work on AI/ML projects including deep learning, supervised/unsupervised learning, and neural networks.</p>
+                <button onclick="window.location.href='ai-ml.html'">Read More</button>
+            </div>
+            
+            <!-- DBMS -->
+            <div class="work-item">
+                <h3>Database Management (DBMS)</h3>
+                <p>Proficient in SQL, database design, normalization, and working with DBMS like MySQL, PostgreSQL.</p>
+                <button onclick="window.location.href='dbms.html'">Read More</button>
+            </div>
+            
+            <!-- Cyber Security -->
+            <div class="work-item">
+                <h3>Cyber Security (CS)</h3>
+                <p>Fundamentals of cyber security, ethical hacking, and network protection techniques.</p>
+                <button onclick="window.location.href='cyber-security.html'">Read More</button>
+            </div>
+    
+            <!-- Optimization Techniques -->
+            <div class="work-item">
+                <h3>Optimization Techniques (OT)</h3>
+                <p>Concepts in linear programming, non-linear programming, and optimization models.</p>
+                <button onclick="window.location.href='optimization-techniques.html'">Read More</button>
+            </div>
+            
+            <!-- Agile Software Development -->
+            <div class="work-item">
+                <h3>Agile Software Development</h3>
+                <p>I manage software development projects using Agile methodologies like Scrum. My focus is on iterative development, adaptive planning, and delivering high-quality products. Certifications: Certified ScrumMaster (CSM), Agile Practitioner.</p>
+                <button onclick="window.location.href='asd.html'">Read More</button>
+            </div>
+
+            <!-- Data Structures and Algorithms -->
+            <div class="work-item">
+                <h3>Data Structures and Algorithms</h3>
+                <p>I work with various data structures and algorithms, including array manipulation, linked lists, stacks, queues, trees, graphs, sorting and searching algorithms. Expertise in optimizing time and space complexity, and certifications in DSA. Experience with both theoretical and practical applications in competitive programming and software development.</p>
+                <button onclick="window.location.href='data-structures-algorithms.html'">Read More</button>
+            </div>
+
+            <!-- Probability and Statistics -->
+            <div class="work-item">
+                <h3>Probability and Statistics</h3>
+                <p>I have studied fundamental concepts of probability, probability distributions, statistical analysis, hypothesis testing, and curve fitting methods. I have worked on applied statistics in various projects related to data analysis.</p>
+                <button onclick="window.location.href='probability-statistics.html'">Read More</button>
+            </div>
+
+            <!-- Image Processing -->
+            <div class="work-item">
+                <h3>Image Processing</h3>
+                <p>In this section, I explore various techniques and algorithms for processing and analyzing images. I cover topics like image enhancement, filtering, transformation, and restoration, utilizing libraries such as OpenCV and PIL.</p>
+                <button onclick="window.location.href='image-processing.html'">Read More</button>
+            </div>
+
+
+            <!-- Digital Fundamentals -->
+            <div class="work-item">
+                <h3>Digital Fundamentals</h3>
+                <p>I explore key concepts in Digital Electronics, including logic gates, Boolean algebra, combinational and sequential circuits, and design of digital systems. Certifications: DE Basics, Logic Circuit Design.</p>
+                <button onclick="window.location.href='digital-fundamentals.html'">Read More</button>
+            </div>
+
+            <!-- Programming for Problem Solving -->
+            <div class="work-item">
+                <h3>Programming for Problem Solving</h3>
+                <p>In this section, I focus on developing strong problem-solving skills using various programming languages. I emphasize algorithms, data structures, and practical coding techniques to tackle real-world challenges.</p>
+                <button onclick="window.location.href='programming-for-problem-solving.html'">Read More</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- <section id="portfolio">
+        <h1>My Portfolio</h1>
+    </section> -->
+    <section id="portfolio">
+        <h1>My Portfolio</h1>
+        <div class="portfolio-container">
+            <!-- Project 1 -->
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Project 1 Image" class="portfolio-image">
+                <h3>Project 1: Conversational Image Recognition Chatbot</h3>
+                <p>A deep learning chatbot that can recognize objects in images and provide intelligent responses. Worked on image processing, object detection, and NLP integration.</p>
+                <button onclick="window.location.href='project1.html'">View Project</button>
+            </div>
+    
+            <!-- Project 2 -->
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Project 2 Image" class="portfolio-image">
+                <h3>Project 2: Crop Recommendation System</h3>
+                <p>An AI-powered recommendation system for farmers, suggesting the best crops to grow based on soil conditions, weather data, and historical yields.</p>
+                <button onclick="window.location.href='project2.html'">View Project</button>
+            </div>
+    
+            <!-- Project 3 -->
+            <!-- <div class="portfolio-item">
+                <img src="project3.jpg" alt="Project 3 Image" class="portfolio-image">
+                <h3>Project 3: ShikhshaFinder</h3>
+                <p>A web platform to help students explore educational opportunities like schools, tutors, and courses. Includes features like comparison tools, reviews, and ratings.</p>
+                <button onclick="window.location.href='project3.html'">View Project</button>
+            </div> -->
+    
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+    
+    <!-- <section id="daily-updates">
+        <h1>Daily Updates</h1>
+    </section> -->
+    <section id="daily-updates">
+        <h1>Daily Updates</h1>
+        <div class="updates-container">
+            <!-- Daily Update 1 -->
+            <div class="update-item">
+                <h3>Daily Learning: JavaScript Basics</h3>
+                <p>Learned about variables, data types, and functions in JavaScript. Working on understanding scope and closures.</p>
+                <button onclick="window.location.href='daily-update-1.html'">Read More</button>
+            </div>
+    
+            <!-- Daily Update 2 -->
+            <div class="update-item">
+                <h3>Weekly Update: AI and Machine Learning</h3>
+                <p>Studied different types of machine learning algorithms including supervised and unsupervised learning. Started a mini-project on regression analysis.</p>
+                <button onclick="window.location.href='weekly-update-1.html'">Read More</button>
+            </div>
+    
+            <!-- Daily Update 3 -->
+            <div class="update-item">
+                <h3>Monthly Reflection: Web Development Progress</h3>
+                <p>This month, I completed several projects using HTML, CSS, and JavaScript. Gained hands-on experience with frameworks like React.</p>
+                <button onclick="window.location.href='monthly-update-1.html'">Read More</button>
+            </div>
+    
+            <!-- Add more updates as needed -->
+        </div>
+    </section>
+    
+    <section id="certifications">
+        <h1>My Certifications</h1>
+        <div class="certifications-container">
+            <div class="certification-item">
+                <h3>AI-900: Microsoft Certified: Azure AI Fundamentals</h3>
+                <p>Issued by Microsoft</p>
+                <p>Date: June 2023</p>
+                <button onclick="toggleImage('cert1')">View</button>
+                <img id="cert1" class="cert-preview" src="demo_cert.jpg" alt="AI-900 Certificate" style="display: none;">
+            </div>
+            
+            <div class="certification-item">
+                <h3>Machine Learning Specialist</h3>
+                <p>Issued by XYZ Platform</p>
+                <p>Date: September 2023</p>
+                <button onclick="toggleImage('cert2')">View</button>
+                <img id="cert2" class="cert-preview" src="path_to_your_image/ml_specialist_cert.jpg" alt="Machine Learning Specialist Certificate" style="display: none;">
+            </div>
+    
+            <!-- Add more certifications here -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <p>If you would like to reach out, please fill in the form below!</p>
+        
+        <form id="contact-form">
+            <input type="text" id="userName" placeholder="Your Name" required>
+            <input type="email" id="userEmail" placeholder="Your Email" required>
+            <textarea id="userMessage" rows="4" placeholder="Your Message" required></textarea>
+            
+            <select id="comment" required>
+                <option value="" disabled selected>Select a comment</option>
+                <option value="Great job!">Great job!</option>
+                <option value="Keep going!">Keep going!</option>
+                <option value="Awesome achievements!">Awesome achievements!</option>
+                <option value="Nice work!">Nice work!</option>
+            </select>
+            <button type="submit">Send Message</button>
+        </form>
+    
+        <h2>Comments:</h2>
+        <ul id="comments-list"></ul>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <h3>Connect with Me</h3>
+            <ul class="social-media">
+                <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+                <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
+                <!-- <li><a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a></li> -->
+                <li><a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a></li>
+            </ul>
+            <p>&copy; 2024 Sandeep. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- navbar -->
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('show');
+        }
+    </script>
+<!-- certifications -->
+<script>
+    function toggleImage(certId) {
+        const certImage = document.getElementById(certId);
+        if (certImage.style.display === 'none') {
+            certImage.style.display = 'block'; // Show the image
+        } else {
+            certImage.style.display = 'none'; // Hide the image
+        }
+    }
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>
