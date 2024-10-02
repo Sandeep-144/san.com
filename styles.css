@@ -181,6 +181,7 @@ body {
 #daily-updates {
     padding: 50px 20px;
     text-align: center;
+    background-color: #2c2c2c;
 }
 
 .updates-container {
@@ -197,7 +198,7 @@ body {
     padding: 20px;
     text-align: center;
     width: 300px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
 }
 
 .update-item h3 {
