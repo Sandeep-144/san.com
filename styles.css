@@ -210,7 +210,7 @@ body {
 }
 
 /* Contact Section Styling */
-#contact {
+/* #contact {
     padding: 50px 20px;
 }
 
@@ -244,6 +244,67 @@ body {
 
 #comments-section {
     margin-top: 20px;
+}
+ */
+/* Contact Section Styling */
+#contact {
+    background-color: #1e1e1e; /* Matches dark theme */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    color: #f0f0f0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#contact h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+#contact button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #0056b3;
+}
+
+#contact ul {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#contact ul li a {
+    font-size: 1.1rem;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact ul li a:hover {
+    color: #0056b3;
 }
 
 /* Footer Styling */
