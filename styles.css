@@ -209,6 +209,30 @@ body {
     margin-bottom: 15px;
 }
 
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #383838;
+}
+
+button:focus {
+    outline: none;
+}
+
+.daily-update-item button {
+    margin-top: 10px;
+}
+
 /* Contact Section Styling */
 /* #contact {
     padding: 50px 20px;
