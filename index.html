@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Sandeep's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <!-- <nav class="navbar">
+        <div class="navbar-title">Sandeep's Portfolio</div>
         <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
         <ul id="navbar">
             <li><a href="#home">Home</a></li>
@@ -21,7 +23,35 @@
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+    </nav> -->
+
+    <!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-title">Sandeep's Portfolio</div>
+    <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+    <ul id="navbar">
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#education" onclick="closeMenu()">Education</a></li>
+        <li><a href="#work" onclick="closeMenu()">Professional Learning</a></li>
+        <li><a href="#portfolio" onclick="closeMenu()">Projects</a></li>
+        <li><a href="#daily-updates" onclick="closeMenu()">Updates</a></li>
+        <li><a href="#certifications" onclick="closeMenu()">Certifications</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+</nav>
+
+<script>
+    function toggleMenu() {
+        const navbar = document.getElementById('navbar');
+        navbar.classList.toggle('show');
+    }
+
+    function closeMenu() {
+        const navbar = document.getElementById('navbar');
+        navbar.classList.remove('show');
+    }
+</script>
+
 
     <section id="home">
         <div class="home-content">
@@ -36,7 +66,7 @@
     </section>
 
     <section id="education">
-        <h1>My Education</h1>
+        <h1>Academic Background</h1>
         <div class="education-container">
             <div class="education-item">
                 <h3>Bachelor's in Engineering (BE) in AI-ML</h3>
@@ -63,7 +93,7 @@
 
     <!-- Work Section -->
     <section id="work">
-        <h1>My Work</h1>
+        <h1>Professional Learning</h1>
         <div class="work-container">
             <!-- Web Development -->
             <div class="work-item">
@@ -155,7 +185,7 @@
         <h1>My Portfolio</h1>
     </section> -->
     <section id="portfolio">
-        <h1>My Portfolio</h1>
+        <h1>Project Showcase</h1>
         <div class="portfolio-container">
             <!-- Project 1 -->
             <div class="portfolio-item">
@@ -173,14 +203,6 @@
                 <button onclick="window.location.href='project2.html'">View Project</button>
             </div>
     
-            <!-- Project 3 -->
-            <!-- <div class="portfolio-item">
-                <img src="project3.jpg" alt="Project 3 Image" class="portfolio-image">
-                <h3>Project 3: ShikhshaFinder</h3>
-                <p>A web platform to help students explore educational opportunities like schools, tutors, and courses. Includes features like comparison tools, reviews, and ratings.</p>
-                <button onclick="window.location.href='project3.html'">View Project</button>
-            </div> -->
-    
             <!-- Add more projects as needed -->
         </div>
     </section>
@@ -189,27 +211,43 @@
         <h1>Daily Updates</h1>
     </section> -->
     <section id="daily-updates">
-        <h1>Daily Updates</h1>
+        <h1>Latest Insights</h1>
         <div class="updates-container">
             <!-- Daily Update 1 -->
             <div class="update-item">
+                <h3>Intelligent News Curator</h3>
+                <p>Currently, I'm developing an Intelligent News Curator that utilizes Natural Language Processing (NLP) to aggregate and summarize news articles from various sources. This project aims to provide users with tailored news updates based on their interests, enhancing their reading experience. I'm leveraging Python libraries such as NLTK and spaCy for text processing and analysis.</p>
+            </div>
+            
+            <!-- Add more updates as needed -->
+            <div class="update-item">
+                <h3>Machine Learning Exploration</h3>
+                <p>I'm exploring various machine learning algorithms and techniques to improve the performance of my projects. This includes hands-on experiments with libraries like Scikit-Learn and TensorFlow, focusing on model training, validation, and optimization.</p>
+            </div>
+            
+            <div class="update-item">
+                <h3>Data Visualization</h3>
+                <p>Working on enhancing data visualization skills using libraries like Matplotlib and Seaborn to effectively present the findings of my projects. This helps in making complex data more understandable and engaging for users.</p>
+            </div>
+            
+            <div class="update-item">
                 <h3>Daily Learning: JavaScript Basics</h3>
                 <p>Learned about variables, data types, and functions in JavaScript. Working on understanding scope and closures.</p>
-                <button onclick="window.location.href='daily-update-1.html'">Read More</button>
+                <!-- <button onclick="window.location.href='daily-update-1.html'">Read More</button> -->
             </div>
     
             <!-- Daily Update 2 -->
             <div class="update-item">
                 <h3>Weekly Update: AI and Machine Learning</h3>
                 <p>Studied different types of machine learning algorithms including supervised and unsupervised learning. Started a mini-project on regression analysis.</p>
-                <button onclick="window.location.href='weekly-update-1.html'">Read More</button>
+                <!-- <button onclick="window.location.href='weekly-update-1.html'">Read More</button> -->
             </div>
     
             <!-- Daily Update 3 -->
             <div class="update-item">
                 <h3>Monthly Reflection: Web Development Progress</h3>
                 <p>This month, I completed several projects using HTML, CSS, and JavaScript. Gained hands-on experience with frameworks like React.</p>
-                <button onclick="window.location.href='monthly-update-1.html'">Read More</button>
+                <!-- <button onclick="window.location.href='monthly-update-1.html'">Read More</button> -->
             </div>
     
             <!-- Add more updates as needed -->
@@ -243,7 +281,7 @@
                 <img id="codingEvent1" class="cert-preview" src="lakshya'23.jpg" alt="Insight Coding Lakshya'23 Certificate" style="display: none;">
             </div>
             
-<!--             <div class="certification-item">
+            <div class="certification-item">
                 <h3>AI-900: Microsoft Certified: Azure AI Fundamentals</h3>
                 <p>Issued by Microsoft</p>
                 <p>Date: June 2023</p>
@@ -257,70 +295,39 @@
                 <p>Date: September 2023</p>
                 <button onclick="toggleImage('cert2')">View</button>
                 <img id="cert2" class="cert-preview" src="path_to_your_image/ml_specialist_cert.jpg" alt="Machine Learning Specialist Certificate" style="display: none;">
-            </div> -->
+            </div>
     
             <!-- Add more certifications here -->
         </div>
     </section>
     
-<!--     <section id="contact">
-        <h1>Contact Me</h1>
-        <p>If you would like to reach out, please fill in the form below!</p>
-        
-        <form id="contact-form">
-            <input type="text" id="userName" placeholder="Your Name" required>
-            <input type="email" id="userEmail" placeholder="Your Email" required>
-            <textarea id="userMessage" rows="4" placeholder="Your Message" required></textarea>
-            
-            <select id="comment" required>
-                <option value="" disabled selected>Select a comment</option>
-                <option value="Great job!">Great job!</option>
-                <option value="Keep going!">Keep going!</option>
-                <option value="Awesome achievements!">Awesome achievements!</option>
-                <option value="Nice work!">Nice work!</option>
-            </select>
-            <button type="submit">Send Message</button>
-        </form>
-    
-        <h2>Comments:</h2>
-        <ul id="comments-list"></ul>
-    </section> -->
-    <section id="contact">
+    <!-- Contact Section -->
+        <section id="contact">
             <h1>Contact Me</h1>
             <p>If you'd like to get in touch with me, feel free to send me an email. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
             
-<!--             <button onclick="window.location.href='mailto:youremail@example.com'">Mail Me</button> -->
+            <!-- <button onclick="window.location.href='mailto:youremail@example.com'">Mail Me</button> -->
             
             <ul>
                 <li><a href="mailto:sandeep4122ki@gmail.com">Email</a></li>
             </ul>
         </section>
-<!--     <footer>
-        <div class="footer-content">
-            <h3>Connect with Me</h3>
-            <ul class="social-media">
-                <li><a href="mailto:sandeep4122ki@gmail.com">Email</a></li>
-                <li><a href="https://www.linkedin.com/in/sandeep-malivad-a56230251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
-                <li><a href="https://x.com/Sandeep__144?t=aeXFkVCHZfXki6Uu2uzB_w&s=09" target="_blank">Twitter</a></li>
-                <li><a href="https://www.instagram.com/sandeep__144?igsh=cHRzcnI5Z2p2dzIz" target="_blank">Instagram</a></li>
-            </ul>
-            <p>&copy; 2024 Sandeep. All Rights Reserved.</p>
-        </div>
-    </footer> -->
+
     <footer>
         <div class="footer-content">
             <h3>Follow Me Online</h3>
             <ul class="social-media">
-                <li><a href="mailto:sandeep4122ki@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/sandeep-malivad-a56230251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="mailto:youremail@example.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="https://github.com/yourusername" target="_blank"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://x.com/Sandeep__144?t=aeXFkVCHZfXki6Uu2uzB_w&s=09" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/sandeep__144?igsh=cHRzcnI5Z2p2dzIz" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/yourusername" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/yourusername" target="_blank"><i class="fa fa-instagram"></i></a></li>
             </ul>
             <p>&copy; 2024 Sandeep. All Rights Reserved.</p>
         </div>
     </footer>
+    
+
     <!-- navbar -->
     <script>
         function toggleMenu() {
