@@ -52,6 +52,7 @@ body {
 }
 
 /* Home Section Styling */
+/* Home Section Styling */
 #home {
     display: flex;
     align-items: center;
@@ -82,8 +83,17 @@ body {
     margin-bottom: 15px;
 }
 
+.introduction h2 {
+    color: #fff;
+}
+
+.introduction b {
+    color: #fff;
+}
+
 .introduction p {
     font-size: 18px;
+    color: #b0b0b0
 }
 
 /* Work Section Styling */
