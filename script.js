@@ -8,7 +8,8 @@ function showDetails(id) {
 }
 
 // JavaScript for typing animation
-const textArray = ["Hi! I'm Sandeep Malivad", "I'm an AI-ML engineer", "I'm a developer", /*"I'm a coder"*/];
+// const textArray = ["Hi! I'm Sandeep Malivad", "I'm an AI-ML engineer", "I'm a developer", /*"I'm a coder"*/];
+const textArray = ["An AI-ML Engineer", "An AI-ML Specialist", "An AI Researcher", "A Software Developer", "A Coding Enthusiast", "A Technology Explorer"];
 let currentIndex = 0;
 let charIndex = 0;
 let currentText = '';
