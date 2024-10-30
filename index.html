@@ -11,21 +11,6 @@
 </head>
 <body>
     <!-- Navbar -->
-    <!-- <nav class="navbar">
-        <div class="navbar-title">Sandeep's Portfolio</div>
-        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
-        <ul id="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#daily-updates">Daily Updates</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav> -->
-
-    <!-- Navbar -->
 <nav class="navbar">
     <div class="navbar-title">Sandeep's Portfolio</div>
     <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
@@ -51,7 +36,6 @@
         navbar.classList.remove('show');
     }
 </script>
-
 
     <section id="home">
         <div class="home-content">
@@ -97,87 +81,109 @@
         <div class="work-container">
             <!-- Web Development -->
             <div class="work-item">
-                <h3>Web Development</h3>
-                <p>Here I share my knowledge of HTML, CSS, JavaScript, and frameworks like React, and how I create responsive, dynamic websites.</p>
-                <button onclick="window.location.href='web-development.html'">Read More</button>
+                <img src="web-dev.jpg" alt="Web Development" class="work-image">
+                <div class="work-content">
+                    <h3>Web Development</h3>
+                    <p>Here I share my knowledge of HTML, CSS, JavaScript, and frameworks like React, and how I create responsive, dynamic websites.</p>
+                    <button onclick="window.location.href='web-development.html'">Read More</button>
+                </div>
             </div>
             
             <!-- AI-ML -->
             <div class="work-item">
-                <h3>AI-ML</h3>
-                <p>I work on AI/ML projects including deep learning, supervised/unsupervised learning, and neural networks.</p>
-                <button onclick="window.location.href='ai-ml.html'">Read More</button>
+                <img src="ai-ml.jpg" alt="AI-ML" class="work-image">
+                <div class="work-content">
+                    <h3>AI-ML</h3>
+                    <p>I work on AI/ML projects including deep learning, supervised/unsupervised learning, and neural networks.</p>
+                    <button onclick="window.location.href='ai-ml.html'">Read More</button>
+                </div>
             </div>
-            
+
             <!-- DBMS -->
             <div class="work-item">
-                <h3>Database Management (DBMS)</h3>
-                <p>Proficient in SQL, database design, normalization, and working with DBMS like MySQL, PostgreSQL.</p>
-                <button onclick="window.location.href='dbms.html'">Read More</button>
+                <img src="dbms.jpg" alt="Database Management" class="work-image">
+                <div class="work-content">
+                    <h3>Database Management (DBMS)</h3>
+                    <p>Proficient in SQL, database design, normalization, and working with DBMS like MySQL, PostgreSQL.</p>
+                    <button onclick="window.location.href='dbms.html'">Read More</button>
+                </div>
             </div>
             
             <!-- Cyber Security -->
             <div class="work-item">
-                <h3>Cyber Security (CS)</h3>
-                <p>Fundamentals of cyber security, ethical hacking, and network protection techniques.</p>
-                <button onclick="window.location.href='cyber-security.html'">Read More</button>
+                <img src="cyber-security.jpg" alt="Cyber Security" class="work-image">
+                <div class="work-content">
+                    <h3>Cyber Security (CS)</h3>
+                    <p>Fundamentals of cyber security, ethical hacking, and network protection techniques.</p>
+                    <button onclick="window.location.href='cyber-security.html'">Read More</button>
+                </div>
             </div>
-    
+            
             <!-- Agile Software Development -->
             <div class="work-item">
-                <h3>Agile Software Development</h3>
-                <p>I manage software development projects using Agile methodologies like Scrum. My focus is on iterative development, adaptive planning, and delivering high-quality products. Certifications: Certified ScrumMaster (CSM), Agile Practitioner.</p>
-                <button onclick="window.location.href='asd.html'">Read More</button>
+                <img src="asd.jpg" alt="Agile Software Development" class="work-image">
+                <div class="work-content">
+                    <h3>Agile Software Development</h3>
+                    <p>I manage software development projects using Agile methodologies like Scrum. My focus is on iterative development, adaptive planning, and delivering high-quality products. Certifications: Certified ScrumMaster (CSM), Agile Practitioner.</p>
+                    <button onclick="window.location.href='asd.html'">Read More</button>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <img src="qa.jpg" alt="Quality Assurance Image" class="work-image">
+                <div class="work-content">
+                    <h3>Quality Assurance (QA)</h3>
+                    <p>I share my experience with Quality Assurance, covering testing methodologies, automation tools, and how I ensure software quality through rigorous testing practices.</p>
+                    <button onclick="window.location.href='quality-assurance.html'">Read More</button>
+                </div>
             </div>
             
             <div class="work-item">
-                <h3>Quality Assurance (QA)</h3>
-                <p>In this section, I share my experience with Quality Assurance, including various testing methodologies, automation tools, and how I ensure software quality through rigorous testing practices.</p>
-                <button onclick="window.location.href='quality-assurance.html'">Read More</button>
-            </div>            
-
-            <!-- Optimization Techniques -->
-            <div class="work-item">
-                <h3>Optimization Techniques (OT)</h3>
-                <p>Concepts in linear programming, non-linear programming, and optimization models.</p>
-                <button onclick="window.location.href='optimization-techniques.html'">Read More</button>
+                <img src="dsa.jpg" alt="Data Structures and Algorithms Image" class="work-image">
+                <div class="work-content">
+                    <h3>Data Structures and Algorithms</h3>
+                    <p>Explore data structures like arrays, linked lists, stacks, queues, trees, graphs, and sorting/searching techniques. Emphasis on optimizing time and space complexity for software development and competitive programming.</p>
+                    <button onclick="window.location.href='data-structures-algorithms.html'">Read More</button>
+                </div>
             </div>
 
-            <!-- Data Structures and Algorithms -->
             <div class="work-item">
-                <h3>Data Structures and Algorithms</h3>
-                <p>I work with data structures and algorithms, including arrays, linked lists, stacks, queues, trees, graphs, and sorting/searching techniques. I focus on optimizing time and space complexity. I have practical experience in competitive programming and software development.</p>
-                <button onclick="window.location.href='data-structures-algorithms.html'">Read More</button>
+                <img src="p-and-s.jpg" alt="Probability and Statistics Image" class="work-image">
+                <div class="work-content">
+                    <h3>Probability and Statistics</h3>
+                    <p>Exploring fundamental concepts such as probability distributions, statistical analysis, hypothesis testing, and curve fitting methods. I apply these principles in data analysis projects to derive meaningful insights.</p>
+                    <button onclick="window.location.href='probability-statistics.html'">Read More</button>
+                </div>
             </div>
-
-            <!-- Probability and Statistics -->
+            
             <div class="work-item">
-                <h3>Probability and Statistics</h3>
-                <p>I have studied fundamental concepts of probability, probability distributions, statistical analysis, hypothesis testing, and curve fitting methods. I have worked on applied statistics in various projects related to data analysis.</p>
-                <button onclick="window.location.href='probability-statistics.html'">Read More</button>
+                <img src="ip.jpg" alt="Image Processing Techniques" class="work-image">
+                <div class="work-content">
+                    <h3>Image Processing</h3>
+                    <p>Delving into techniques and algorithms for image processing, including image enhancement, filtering, transformation, and restoration, utilizing libraries like OpenCV and PIL for various applications.</p>
+                    <button onclick="window.location.href='image-processing.html'">Read More</button>
+                </div>
             </div>
-
-            <!-- Image Processing -->
+            
             <div class="work-item">
-                <h3>Image Processing</h3>
-                <p>In this section, I explore various techniques and algorithms for processing and analyzing images. I cover topics like image enhancement, filtering, transformation, and restoration, utilizing libraries such as OpenCV and PIL.</p>
-                <button onclick="window.location.href='image-processing.html'">Read More</button>
+                <img src="df.jpg" alt="Digital Fundamentals Image" class="work-image">
+                <div class="work-content">
+                    <h3>Digital Fundamentals</h3>
+                    <p>Exploring the core principles of digital electronics, from logic gates and Boolean algebra to combinational and sequential circuits. Certified in DE Basics and Logic Circuit Design.</p>
+                    <button onclick="window.location.href='digital-fundamentals.html'">Read More</button>
+                </div>
             </div>
-
-
-            <!-- Digital Fundamentals -->
+            
             <div class="work-item">
-                <h3>Digital Fundamentals</h3>
-                <p>I explore key concepts in Digital Electronics, including logic gates, Boolean algebra, combinational and sequential circuits, and design of digital systems. Certifications: DE Basics, Logic Circuit Design.</p>
-                <button onclick="window.location.href='digital-fundamentals.html'">Read More</button>
+                <img src="pps.jpg" alt="Programming for Problem Solving" class="work-image">
+                <div class="work-content">
+                    <h3>Programming for Problem Solving</h3>
+                    <p>Developing problem-solving skills using programming languages, focusing on algorithms, data structures, and practical coding techniques to solve complex real-world challenges effectively.</p>
+                    <button onclick="window.location.href='programming-for-problem-solving.html'">Read More</button>
+                </div>
             </div>
+            
 
-            <!-- Programming for Problem Solving -->
-            <div class="work-item">
-                <h3>Programming for Problem Solving</h3>
-                <p>In this section, I focus on developing strong problem-solving skills using various programming languages. I emphasize algorithms, data structures, and practical coding techniques to tackle real-world challenges.</p>
-                <button onclick="window.location.href='programming-for-problem-solving.html'">Read More</button>
-            </div>
         </div>
     </section>
     
@@ -194,11 +200,19 @@
                 <p>A deep learning chatbot that can recognize objects in images and provide intelligent responses. Worked on image processing, object detection, and NLP integration.</p>
                 <button onclick="window.location.href='project1.html'">View Project</button>
             </div>
-    
+
+            <!-- Project 3 -->
+            <div class="portfolio-item">
+                <img src="inc.png" alt="Intelligent News Curator Image" class="portfolio-image">
+                <h3>Project 2: Intelligent News Curator</h3>
+                <p>A machine learning-driven news curation tool that intelligently gathers and categorizes news articles based on user interests and recent trends. Utilizes NLP for topic identification and Python libraries for machine learning.</p>
+                <button onclick="window.location.href='news_curator.html'">View Project</button>
+            </div>
+
             <!-- Project 2 -->
             <div class="portfolio-item">
                 <img src="crop.jpg" alt="Project 2 Image" class="portfolio-image">
-                <h3>Project 2: Crop Recommendation System</h3>
+                <h3>Project 3: Crop Recommendation System</h3>
                 <p>An AI-powered recommendation system for farmers, suggesting the best crops to grow based on soil conditions, weather data, and historical yields.</p>
                 <button onclick="window.location.href='project2.html'">View Project</button>
             </div>
