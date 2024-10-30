@@ -7,6 +7,34 @@ function showDetails(id) {
     }
 }
 
+// JavaScript for typing animation
+const textArray = ["Hi! I'm Sandeep Malivad", "I'm an AI-ML engineer", "I'm a developer", /*"I'm a coder"*/];
+let currentIndex = 0;
+let charIndex = 0;
+let currentText = '';
+let isDeleting = false;
+
+function typeEffect() {
+    if (isDeleting) {
+        currentText = textArray[currentIndex].substring(0, charIndex--);
+    } else {
+        currentText = textArray[currentIndex].substring(0, charIndex++);
+    }
+    
+    document.getElementById('animated-text').textContent = currentText;
+    
+    if (!isDeleting && charIndex === textArray[currentIndex].length) {
+        setTimeout(() => isDeleting = true, 1000);
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        currentIndex = (currentIndex + 1) % textArray.length;
+    }
+    
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
+}
+
+document.addEventListener("DOMContentLoaded", typeEffect);
+
 // function submitComment() {
 //     const comment = document.getElementById("comment").value;
 //     const predefinedComment = document.getElementById("predefined-comments").value;
