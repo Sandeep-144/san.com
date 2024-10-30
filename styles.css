@@ -672,3 +672,34 @@ body {
         margin: 0 0 10px 0;
     }
 }
+
+
+#resume-section {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#resume-section h2 {
+    font-size: 1.8em;
+    color: #ccc;
+}
+
+#resume-section p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+#resume-section button {
+    padding: 10px 20px;
+    background-color: #575757;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#resume-section button:hover {
+    background-color: #005bb5;
+}
