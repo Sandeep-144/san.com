@@ -623,3 +623,52 @@ footer {
 body {
     margin-top: 60px; /* Offset to prevent content from hiding behind navbar */
 }
+
+/* General styling */
+#work {
+    padding: 20px;
+}
+
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a three-column layout */
+    gap: 20px; /* Space between columns */
+}
+
+.work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Removed additional margin */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.work-image {
+    width: 300px; /* Small image size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.work-content {
+    flex: 1;
+    text-align: center;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .work-container {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .work-item {
+        flex-direction: column;
+    }
+
+    .work-image {
+        width: 100%;
+        max-width: none;
+        margin: 0 0 10px 0;
+    }
+}
