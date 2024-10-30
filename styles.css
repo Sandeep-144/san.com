@@ -193,7 +193,7 @@ body {
 }
 
 .update-item {
-    background-color: #2c2c2c;
+    background-color: #444;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -507,8 +507,8 @@ footer {
 }
 
 .certification-item {
-    background-color: #fff; /* White background for each certification */
-    border: 1px solid #ddd; /* Light border */
+    background-color: #444; /* White background for each certification */
+    border: 1px solid #555; /* Light border */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     margin: 15px;
@@ -523,11 +523,11 @@ footer {
 
 .certification-item h3 {
     font-size: 1.2em; /* Larger font for titles */
-    color: #333; /* Dark text color */
+    color: #fff; /* Dark text color */
 }
 
 .certification-item p {
-    color: #555; /* Grey text color for additional information */
+    color: #ddd; /* Grey text color for additional information */
     margin: 5px 0; /* Space between paragraphs */
 }
 
@@ -673,8 +673,6 @@ body {
     }
 }
 
-/* resume section */
-
 #resume-section {
     padding: 40px 20px; /* Add padding for a spacious look */
     text-align: center;
@@ -727,5 +725,35 @@ body {
     #resume-section button {
         font-size: 0.9em;
         padding: 10px 20px;
+    }
+}
+
+.introduction {
+    font-family: Arial, sans-serif; /* Choose your font */
+}
+
+#animated-text {
+    border-right: 0.1em solid #575757; /* Cursor effect */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow */
+    width: 15ch; /* Adjust based on longest phrase */
+    animation: typing 3s steps(15), blink-caret 0.75s step-end infinite; /* Animation */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 15ch; /* Match with the longest phrase */
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #575757;
     }
 }
